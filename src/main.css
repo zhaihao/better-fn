@@ -1,7 +1,12 @@
 sup.footnote-ref {
-  user-select: none;
-  cursor: pointer;
-  color: var(--text-accent);
+    user-select: none;
+    cursor: pointer;
+    color: green !important;
+    font-size: 0.6em;
+    background-color: rgba(0, 128, 0, 0.1);
+    vertical-align: super;
+    line-height: 1;
+    margin-left: 0.1em;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
@@ -24,7 +29,7 @@ sup.footnote-ref {
 }
 
 .markdown-preview-view .tippy-content {
-  max-height: 20em;
+  max-height: 40em;
   overflow-x: auto;
   font-size: calc(var(--editor-font-size) * 0.9);
 }

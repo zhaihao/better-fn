@@ -1,6 +1,9 @@
 # BetterFn
 
 Turning footnote into popover
+```bash
+git remote add upstream git@github.com:aidenlx/better-fn.git
+```
 
 ![BetterFnDemo](https://user-images.githubusercontent.com/31102694/118202596-d8c2d380-b48c-11eb-9777-d2992fa96ed5.gif)
 

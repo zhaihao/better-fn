@@ -1,6 +1,7 @@
 import "tippy.js/dist/tippy.css";
 import "./theme.css";
-import "tippy.js/animations/shift-toward-subtle.css";
+import "tippy.js/animations/shift-away.css";
+import "tippy.js/dist/backdrop.css";
 
 import { infoList } from "processor";
 import tippy, { Instance, Props } from "tippy.js";
@@ -9,14 +10,15 @@ import { unwarp } from "./tools";
 
 tippy.setDefaultProps({
   interactive: true,
-  arrow: true,
+  arrow: false,
   theme: "obsidian",
-  placement: "bottom",
-  delay: [100, 0],
-  trigger: "mouseenter click",
+  placement: "top",
+  delay: [1000, 1000],
+  // trigger: "mouseenter click",
+  trigger: "mouseenter",
   hideOnClick: true,
-  animation: "shift-toward-subtle",
-  duration: [200, 150],
+  animation: "shift-away",
+  duration: [500, 200],
   allowHTML: true,
   zIndex:
     +getComputedStyle(document.body)
